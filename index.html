@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+  <head>
+    <title>Exercise 1</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="src/styles.css" />
+  </head>
+
+	<body>
+		<div>
+				<div class="calculator">
+					<h1 id="title">Calculadora</h1>
+					<input id="result" inputmode="numeric" onkeypress='return event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)'>
+					<table>
+						<tr>
+							<td colspan="3"><button id="clear" onclick="clean()">C</button></td>
+							<td><button onclick="input('/')">/</button></td>
+						</tr>
+						<tr>
+							<td><button onclick="input('7')">7</button></td>
+							<td><button onclick="input('8')">8</button></td>
+							<td><button onclick="input('9')">9</button></td>
+							<td><button onclick="input('*')">X</button></td>
+						</tr>
+						<tr>
+							<td><button onclick="input('4')">4</button></td>
+							<td><button onclick="input('5')">5</button></td>
+							<td><button onclick="input('6')">6</button></td>
+							<td><button onclick="input('-')">-</button></td>
+						</tr>
+						<tr>
+							<td><button onclick="input('1')">1</button></td>
+							<td><button onclick="input('2')">2</button></td>
+							<td><button onclick="input('3')">3</button></td>
+							<td><button onclick="input('+')">+</button></td>
+						</tr>
+						<tr>
+							<td colspan="2"><button id="zero" onclick="input('0')">0</button></td>
+							<td><button onclick="input('.')">,</button></td>
+							<td><button onclick="calculate()">=</button></td>
+						</tr>
+					</div>
+				</form>
+    </div>
+  </body>
+	<script src="src/index.js"> </script>
+</html>
